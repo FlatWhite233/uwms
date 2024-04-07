@@ -4,6 +4,7 @@ import com.example.common.lang.Result;
 import com.example.dto.AdminInfoDTO;
 import com.example.dto.LoginDTO;
 import com.example.entity.Admin;
+import com.example.service.AdminService;
 import com.example.service.impl.AdminServiceImpl;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ import java.util.List;
 public class AdminController {
 
     @Autowired
-    AdminServiceImpl adminService;
+    AdminService adminService;
 
     @RequestMapping("/list")
     @ResponseBody

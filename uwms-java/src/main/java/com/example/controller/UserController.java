@@ -6,6 +6,7 @@ import com.example.dto.RegisterDTO;
 import com.example.dto.UpdateUserDTO;
 import com.example.dto.UserInfoDTO;
 import com.example.entity.User;
+import com.example.service.UserService;
 import com.example.service.impl.UserServiceImpl;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     @Autowired
-    UserServiceImpl userService;
+    UserService userService;
 
     @RequestMapping("/register")
     public String register(){

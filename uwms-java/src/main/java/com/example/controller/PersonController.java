@@ -7,7 +7,7 @@ import com.example.dto.AddPersonDTO;
 import com.example.dto.EditPersonDTO;
 import com.example.dto.SearchDTO;
 import com.example.entity.Person;
-import com.example.service.impl.PersonServiceImpl;
+import com.example.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 public class PersonController {
 
     @Autowired
-    PersonServiceImpl personService;
+    PersonService personService;
 
     @RequestMapping("/list")
     @ResponseBody
